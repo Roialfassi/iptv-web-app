@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# IPTV Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A browser-based IPTV player that allows you to load and watch your IPTV channels directly in the browser. This application is built with React and works as a fully client-side solution with no backend required.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **M3U Playlist Support**: Load your IPTV playlist directly from a URL
+- **Channel Organization**: Browse channels by groups
+- **Search Functionality**: Search for specific groups or channels
+- **Video Playback**: Built-in player with HLS support
+- **Playback Controls**: Play, pause, stop, fullscreen, and volume controls
+- **Responsive Design**: Works on desktop and mobile devices
 
-### `npm start`
+## Requirements
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- A modern web browser (Chrome, Firefox, Safari, Edge)
+- An M3U playlist URL that supports CORS (Cross-Origin Resource Sharing)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+### Option 1: Local Development
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/iptv-web-app.git
+   cd iptv-web-app
+   ```
 
-### `npm run build`
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Option 2: Production Build
 
-### `npm run eject`
+1. Build the application:
+   ```bash
+   npm run build
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. The build files will be in the `build` directory, which you can serve with any static file server.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Enter your M3U playlist URL in the input field
+2. Click "Load Playlist" to load your channels
+3. Browse through the groups in the left sidebar
+4. Click on a group to see its channels
+5. Click on a channel to start playback
+6. Use the player controls to manage playback
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## CORS Considerations
 
-## Learn More
+As this is a client-side application, you may encounter CORS (Cross-Origin Resource Sharing) issues when loading M3U playlists from certain servers. To resolve this:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Use M3U playlists from servers that allow cross-origin requests
+- Use a CORS proxy service if you control the M3U file source
+- For personal use, you can use browser extensions to disable CORS restrictions
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
