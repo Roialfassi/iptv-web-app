@@ -1,0 +1,14 @@
+/* src/styles/index.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', 'Netflix Sans', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to bottom right, #121212, #0d0d0d);
+    color: #FFFFFF;
+    min-height: 100vh;
+  }
+  

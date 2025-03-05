@@ -1,0 +1,100 @@
+
+/* src/styles/App.css */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .url-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 50px);
+    padding: 20px;
+  }
+  
+  .url-input-container h2 {
+    margin-bottom: 20px;
+    color: #E50914;
+  }
+  
+  .m3u-input {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: #2c2c2c;
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .load-button {
+    background-color: #E50914;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .load-button:hover {
+    background-color: #F6121D;
+  }
+  
+  .load-button:disabled {
+    background-color: #444;
+    cursor: not-allowed;
+  }
+  
+  .error-message {
+    color: #E50914;
+    margin-top: 15px;
+  }
+  
+  .main-content {
+    display: flex;
+    height: calc(100vh - 50px);
+  }
+  
+  .sidebar {
+    width: 25%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #333;
+  }
+  
+  .groups-section,
+  .channels-section {
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .groups-section {
+    border-bottom: 1px solid #333;
+  }
+  
+  .search-input {
+    margin: 10px;
+    padding: 8px;
+    background-color: #2c2c2c;
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: white;
+  }
+  
+  .player-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
