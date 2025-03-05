@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/iptv-web-app/static/css/main.c99402b8.css",
+    "main.js": "/iptv-web-app/static/js/main.852c3911.js",
+    "index.html": "/iptv-web-app/index.html",
+    "main.c99402b8.css.map": "/iptv-web-app/static/css/main.c99402b8.css.map",
+    "main.852c3911.js.map": "/iptv-web-app/static/js/main.852c3911.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c99402b8.css",
+    "static/js/main.852c3911.js"
+  ]
+}
